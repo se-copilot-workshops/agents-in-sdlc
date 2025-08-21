@@ -6,7 +6,7 @@ Before we get started on the lab, there's a few tasks we need to complete to get
 
 To create a copy of the repository for the code you'll create an instance from the [template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository). The new instance will contain all of the necessary files for the lab, and you'll use it as you work through the exercises. 
 
-1. In a new browser window, navigate to the GitHub repository for this lab: `https://github.com/github-samples/agents-in-sdlc`.
+1. In a new browser window, navigate to the GitHub repository for this lab: `https://github.com/se-copilot-workshops/agents-in-sdlc`.
 2. Create your own copy of the repository by selecting the **Use this template** button on the lab repository page. Then select **Create a new repository**.
 
     ![Use this template button](images/use-template.png)
