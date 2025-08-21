@@ -1,0 +1,22 @@
+{
+  "name": "Tailspin Toys Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
+  "postCreateCommand": "./scripts/setup-env.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ms-python.vscode-pylance",
+        "svelte.svelte-vscode",
+        "astro-build.astro-vscode"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:2": {
+      "version": "9.0"
+    }
+  }
+}

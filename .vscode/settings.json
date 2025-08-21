@@ -1,0 +1,19 @@
+{
+    "cSpell.words": [
+        "backref",
+        "CODEOWNERS",
+        "codespace",
+        "Codespaces",
+        "containerapp",
+        "creds",
+        "devcontainer",
+        "devcontainers",
+        "docstrings",
+        "isouter",
+        "prebuild",
+        "SDLC"
+    ],
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "editor.tabSize": 4,
+    "chat.agent.enabled": true
+}
