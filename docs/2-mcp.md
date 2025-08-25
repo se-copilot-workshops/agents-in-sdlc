@@ -230,8 +230,7 @@ Notice that the setup process is similar to the GitHub MCP server, but you do no
 
 ---
 
-| [← Previous lesson: GitHub Copilot coding agent][previous-lesson] | [Next lesson: Custom instructions →][next-lesson] |
-|:--|--:|
+ **Click Next below**.
 
 [previous-lesson]: ./1-copilot-coding-agent.md
 [next-lesson]: ./3-custom-instructions.md

@@ -123,8 +123,7 @@ This is just the beginning, and we can't wait to see how you use Copilot to help
 
 ---
 
-| [← Adding new functionality with Copilot Agent Mode][previous-lesson] |
-|:----:|
+
 
 [github-copilot]: https://github.com/features/copilot
 [coding-agent-overview]: https://docs.github.com/en/copilot/using-github-copilot/coding-agent/about-assigning-tasks-to-copilot#overview-of-copilot-coding-agent

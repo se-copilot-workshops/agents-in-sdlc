@@ -201,8 +201,7 @@ As the list of games grows there will be a need for paging to be enabled. Using 
 
 ---
 
-| [← Previous lesson: Custom instructions][previous-lesson] | [Next lesson: Reviewing coding agent →][next-lesson] |
-|:--|--:|
+ **Click Next below**.
 
 [previous-lesson]: ./3-custom-instructions.md
 [next-lesson]: ./5-reviewing-coding-agent.md

@@ -194,8 +194,7 @@ With coding agent working diligently in the background, we can now turn our atte
 
 ---
 
-| [← Prerequisites][previous-lesson] | [Next lesson: MCP servers →][next-lesson] |
-|:--|--:|
+ **Click Next below**.
 
 [coding-agent-overview]: https://docs.github.com/en/copilot/using-github-copilot/coding-agent/about-assigning-tasks-to-copilot#overview-of-copilot-coding-agent
 [coding-agent-mcp]: https://docs.github.com/en/copilot/how-tos/agents/copilot-coding-agent/extending-copilot-coding-agent-with-mcp

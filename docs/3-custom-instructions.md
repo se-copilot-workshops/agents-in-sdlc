@@ -211,8 +211,7 @@ Next we'll use [agent mode to add functionality to the site][next-lesson].
 
 ---
 
-| [← Previous lesson: Model Context Protocol (MCP)][previous-lesson] | [Next lesson: Copilot agent mode →][next-lesson] |
-|:--|--:|
+ **Click Next below**.
 
 [previous-lesson]: ./2-mcp.md
 [next-lesson]: ./4-copilot-agent-mode-vscode.md
