@@ -1,7 +1,5 @@
 # Exercise 1 - GitHub Copilot coding agent
 
-| [← Prerequisites][previous-lesson] | [Next lesson: MCP servers →][next-lesson] |
-|:--|--:|
 
 There are likely very few, if any, organizations who don't struggle with tech debt. This could be unresolved security issues, legacy code requiring updates, or feature requests which have languished on the backlog because we just didn't have the time to implement them. GitHub Copilot's coding agent is built to perform tasks such as updating code and adding functionality, all in an autonomous fashion. Once the agent completes its work, it generates a draft PR ready for a human developer to review. This allows offloading of tedious tasks and an acceleration of the development process, and frees developers to focus on larger picture items.
 
@@ -86,7 +84,7 @@ It looks like any other GitHub workflow file, but it has a few key points:
 
 While every developer and organization understands the importance of documentation, most projects have either outdated information or lack it altogether. This is the type of tech debt which often goes unaddressed, slowing productivity and making it more difficult to maintain the codebase or bring new developers into the team. Fortunately, Copilot shines at creating documentation, and this is a perfect issue to assign to Copilot coding agent. It'll work in the background to generate the necessary documentation. In a future exercise we'll return to review its work.
 
-1. Navigate to your repository on github.com in a new browser tab.
+1. Navigate to your repository on github.com in a **new browser tab**. (TIP:  se-copilot-workshops/_yourhandle_)
 2. Select the **Issues** tab.
 3. Select **New issue** to open the new issue dialog.
 4. If prompted, select **Blank issue** to create the new issue.
@@ -94,7 +92,7 @@ While every developer and organization understands the importance of documentati
 6. Set the **Description** to:
    
     ```plaintext
-    Our organization has a requirement that all functions have docstrings or the language equivalent. Unfortunately, recent updates haven't followed this standard. We need to update the existing code to ensure docstrings (or the equivalent) are included with every function or method.
+    Our organisation has a requirement that all functions have docstrings or the language equivalent. Unfortunately, recent updates haven't followed this standard. We need to update the existing code to ensure docstrings (or the equivalent) are included with every function or method.
     ```
 
 7. Select **Create** to create the issue. You might need to scroll down to see the Create button.
@@ -109,7 +107,7 @@ While every developer and organization understands the importance of documentati
 
 11. Select the **Pull Requests** tab.
 12. Open the newly generated issue, which will be titled something similar to **[WIP]: Code lacks documentation**.
-13. After a few minutes, you should see that Copilot has created a todo list.
+13. **After a few minutes**, you should see that Copilot has created a todo list.
 14. Review the list and the tasks it's going to complete.
 15.  Scroll down the pull request timeline, and you should see an update that Copilot has started working on the issue.
 16.  Select the **View session** button.
@@ -122,7 +120,7 @@ While every developer and organization understands the importance of documentati
 
 17. Notice that you can scroll through the live session, and how Copilot is solving the problem. That includes exploring the code and understanding the state, how Copilot pauses to think and decide on the appropriate plan and also creating code.
 
-This will likely take several minutes. One of the primary goals of Copilot coding agent is to allow it to perform tasks asynchronously, freeing us to focus on other tasks. We're going to take advantage of that very feature by both assigning another task to Copilot coding agent, then turning our attention to writing some code to add features to our application.
+**This will likely take several minutes.** One of the primary goals of Copilot coding agent is to allow it to perform tasks asynchronously, freeing us to focus on other tasks. We're going to take advantage of that very feature by both assigning another task to Copilot coding agent, then turning our attention to writing some code to add features to our application.
 
 ## Create new endpoints to modify games
 
@@ -194,7 +192,8 @@ With coding agent working diligently in the background, we can now turn our atte
 
 ---
 
- **Click Next below**.
+ Click the following link to move onto the next exercise.
+ [Next exercise: Setting up the backlog with Copilot agent mode and GitHub's MCP Server](./2-mcp.md)
 
 [coding-agent-overview]: https://docs.github.com/en/copilot/using-github-copilot/coding-agent/about-assigning-tasks-to-copilot#overview-of-copilot-coding-agent
 [coding-agent-mcp]: https://docs.github.com/en/copilot/how-tos/agents/copilot-coding-agent/extending-copilot-coding-agent-with-mcp

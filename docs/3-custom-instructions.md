@@ -1,7 +1,6 @@
 # Exercise 3 - Providing context to Copilot with instruction files
 
-| [← Previous lesson: Model Context Protocol (MCP)][previous-lesson] | [Next lesson: Copilot agent mode →][next-lesson] |
-|:--|--:|
+
 
 Context is key across many aspects of life, and when working with generative AI. If you're performing a task which needs to be completed a particular way, or if a piece of background information is important, we want to ensure Copilot has access to that information. We can use [instruction files][instruction-files] to provide guidance so that Copilot not only understands what we want it to do but also how we want it to be done.
 
@@ -185,9 +184,16 @@ We want to create a new endpoint to list all publishers, and to follow the same 
    ./scripts/run-server-tests.sh
    ```
 
-19. Once the code is correct, and all tests pass, open the **Source Control** panel on the left of the Codespace and review the changes made by Copilot.
-20. Stage the changes by selecting the **+** icon in the **Source Control** panel.
-21. Generate a commit message using the **Sparkle** button.
+19. You may see an error message stating that **Permission denied**. This is something that our friendly Copilot can assist with. Start a new Chat in the Copilot Chat window and switch to **Agent** mode. Enter the following prompt and press Enter.
+   
+   ```plaintext
+   Execute the run-server-tests.sh command
+   ```
+Copilot will provide one or two suggestions with the correct one including the chmod commands to fix the missing permissions!
+
+20. Once the code is correct, and all tests pass, open the **Source Control** panel on the left of the Codespace and review the changes made by Copilot.
+21. Stage the changes by selecting the **+** icon in the **Source Control** panel.
+22. Generate a commit message using the **Sparkle** button.
 
     ![Screenshot of the Source Control panel showing the changes made](images/source-control-changes.png)
 
@@ -210,8 +216,9 @@ Next we'll use [agent mode to add functionality to the site][next-lesson].
 - [Personal custom instructions for GitHub Copilot][personal-instructions]
 
 ---
-
- **Click Next below**.
+ Click the following link to move onto the next exercise.
+ [Next exercise: Adding new functionality with Copilot Agent Mode](./4-copilot-agent-mode-vscode.md)
+ 
 
 [previous-lesson]: ./2-mcp.md
 [next-lesson]: ./4-copilot-agent-mode-vscode.md

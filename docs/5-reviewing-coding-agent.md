@@ -1,7 +1,6 @@
 # Exercise 5: Review GitHub Copilot coding agent's work
 
-| [← Adding new functionality with Copilot Agent Mode][previous-lesson] |
-|:----:|
+
 
 When we first started this lab we assigned a couple of issues to GitHub Copilot coding agent. We asked it to add documentation to our code, and generate few endpoints for another team to iterate on. Let's explore the code changes it suggested and, if necessary, provide feedback to Copilot to improve its work.
 

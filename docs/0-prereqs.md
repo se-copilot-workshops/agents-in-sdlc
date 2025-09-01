@@ -6,20 +6,20 @@ Before we get started on the lab, there's a few tasks we need to complete to get
 
 To create a copy of the repository for the code you'll create an instance from the [template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository). The new instance will contain all of the necessary files for the lab, and you'll use it as you work through the exercises. 
 
-1. In a new browser window, navigate to the GitHub repository for this lab: `https://github.com/se-copilot-workshops/agents-in-sdlc`.
+1. In a new browser window, navigate to the GitHub repository for this lab: `https://github.com/se-copilot-workshops/agents-in-sdlc`. You should sign into GitHub using your own GitHub handle.
 2. Create your own copy of the repository by selecting the **Use this template** button on the lab repository page. Then select **Create a new repository**.
 
     ![Use this template button](images/use-template.png)
 
 > [!IMPORTANT]
-> Select **Microsoft-Build-2025** as the owner and name your repository **bne-** followed by your own GitHub handle. For example **bne-chrisredd**
+> Select **se-copilot-workshops** as the owner and use your GitHub handle for the repository name. 
 
-3. Select **Microsoft-Build-2025** as the owner and name your repository **bne-** followed by your own GitHub handle. For example **bne-chrisredd** This ensures you will get access to the Copilot coding agent and can assign issues to Copilot.
+3. Select **se-copilot-workshops** as the owner and name your GitHub handle for the repository name. This ensures you will get access to the Copilot coding agent and can assign issues to Copilot.
 
     ![Input the repository template settings](images/repository-template-settings.png)
 
 4. Click the **Create repository** button
-5. Make a note of the repository path you created (**Microsoft-Build-2025/bne-xxxx**), as you will be referring to this later in the lab.
+5. Make a note of the repository path you created (**se-copilot-workshops/**___GHhandle___), as you will be referring to this later in the lab.
 
 ## Creating a codespace
 
@@ -31,6 +31,7 @@ Next up, we will be using a codespace to complete the lab exercises. [GitHub Cod
     ![Select the Code button](images/code-button.png)
 
 3. Select the **Codespaces** tab and select the **+** button to create a new Codespace.
+ (**TIP:** Keep reading ahead. Don't wait for the codespace to complete)
 
     ![Create a new codespace](images/create-codespace.png)
 
@@ -42,4 +43,5 @@ Congratulations, you have created a copy of the lab repository! You also began t
 
 ## Next step
 
-Since we've got a few minutes, let's get Copilot working on some tasks asynchronously for us! We can do this by creating issues and assigning them to Copilot coding agent. **Click Next below**.
+Since we've got a few minutes, let's get Copilot working on some tasks asynchronously for us! We can do this by creating issues and assigning them to Copilot coding agent. Click the following link to move onto the next exercise.
+[Next exercise: Copilot Coding Agent](./1-copilot-coding-agent.md)
