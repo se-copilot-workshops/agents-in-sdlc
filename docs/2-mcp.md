@@ -77,7 +77,7 @@ Once you have the extension installed, you may need to authenticate with your Gi
 
     ![Example of switching to agent mode](images/copilot-agent-mode-dropdown.png)
 
-7. Set the model to **Claude 3.5 Sonnet**.
+7. Set the model to **Claude 4.0 Sonnet**.
 
     ![Example of selecting the Claude 3.5 Sonnet model](images/copilot-agent-mode-model.png)
 
