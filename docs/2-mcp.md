@@ -1,7 +1,6 @@
 # Exercise 2 - Setting up the backlog with Copilot agent mode and GitHub's MCP Server
 
-| [← Previous lesson: GitHub Copilot coding agent][previous-lesson] | [Next lesson: Custom instructions →][next-lesson] |
-|:--|--:|
+
 
 There's more to writing code than just writing code. Issues need to be filed, external services need to be called, and information needs to be gathered. Typically this involves interacting with external tools, which can break a developer's flow. Through the power of Model Context Protocol (MCP), you can access all of this functionality right from Copilot!
 
@@ -83,7 +82,7 @@ Once you have the extension installed, you may need to authenticate with your Gi
     ![Example of selecting the Claude 3.5 Sonnet model](images/copilot-agent-mode-model.png)
 
 > [!IMPORTANT]
-> The authors of this lab are not indicating a preference towards one model or another. When building this lab, we used Claude 3.5 Sonnet, and as such are including that in the instructions. The hope is the code suggestions you receive will be relatively consistent to ensure a good experience. However, because LLMs are probabilistic, you may notice the suggestions received differ from what is indicated in the lab. This is perfectly normal and expected.
+> The authors of this lab are not indicating a preference towards one model or another. When building this lab, we used Claude 4.0 Sonnet, and as such are including that in the instructions. The hope is the code suggestions you receive will be relatively consistent to ensure a good experience. However, because LLMs are probabilistic, you may notice the suggestions received differ from what is indicated in the lab. This is perfectly normal and expected.
 
 8. The chat pane should update to indicate that you are now in agent mode. You should see a tools icon, showing that we can configure tools for GitHub Copilot to use.
 
@@ -149,7 +148,7 @@ That's it! You can now use Copilot Chat in agent mode to create issues, manage p
 
 Now that you have set up the GitHub MCP server, you can use Copilot Agent mode to create a backlog of tasks for use in the rest of the lab.
 
-1. Return to the Copilot Chat pane. Select **Agent** from the dropdown list. Set the model to **Claude 3.5 Sonnet**.
+1. Return to the Copilot Chat pane. Select **Agent** from the dropdown list. Set the model to **Claude 4.0 Sonnet**.
 
     ![Example of the Copilot Chat pane with Agent Mode selected](images/copilot-agent-mode-dropdown.png)
 
@@ -230,7 +229,8 @@ Notice that the setup process is similar to the GitHub MCP server, but you do no
 
 ---
 
- **Click Next below**.
+ Click the following link to move onto the next exercise.
+ [Next exercise: Providing context to Copilot with instruction files](./3-custom-instructions.md)
 
 [previous-lesson]: ./1-copilot-coding-agent.md
 [next-lesson]: ./3-custom-instructions.md
