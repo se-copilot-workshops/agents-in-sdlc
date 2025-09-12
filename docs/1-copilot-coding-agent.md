@@ -106,7 +106,7 @@ While every developer and organization understands the importance of documentati
   ![Copilot uses the eyes emoji to indicate it's working on the issue](images/ex4-issue-eyes.png)
 
 11. Select the **Pull Requests** tab.
-12. Open the newly generated issue, which will be titled something similar to **[WIP]: Code lacks documentation**.
+12. Open the newly generated pull request, which will be titled something similar to **[WIP]: Code lacks documentation**.
 13. **After a few minutes**, you should see that Copilot has created a todo list.
 14. Review the list and the tasks it's going to complete.
 15.  Scroll down the pull request timeline, and you should see an update that Copilot has started working on the issue.
