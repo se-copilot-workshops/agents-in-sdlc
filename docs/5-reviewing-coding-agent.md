@@ -81,7 +81,7 @@ Let's return to the PR Copilot generated for resolving our issue about adding en
     ![Approve and run workflows](images/ex4-approve-and-run.png)
 
 8. You should see the workflows get queued in the checks section of the pull request. All being well, you should see that the workflows pass for both the backend and frontend. This may take a few minutes to complete.
-9. **Optional:** You could even switch to this branch in your Codespace to perform a manual test of the new endpoints. Navigate to your Codespace, open the terminal, and run the following commands (replace **<branch-name>** with the name of the branch Copilot created, e.g. **copilot/fix-8**.):
+9. **Optional:** You could even switch to this branch in your Codespace to perform a manual test of the new endpoints. Navigate to your Codespace, open the terminal, and run the following commands (replace **\<branch-name\>** with the name of the branch Copilot created, e.g. **copilot/fix-8**.):
 
     ```bash
     git fetch origin
