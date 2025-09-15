@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@astrojs/node": "^9.4.2",
-    "@astrojs/svelte": "^7.1.0",
-    "@tailwindcss/vite": "^4.1.12",
+    "@astrojs/svelte": "^7.1.1",
+    "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.12.3",
-    "svelte": "^5.38.2",
+    "svelte": "^5.38.10",
     "typescript": "^5.9.2"
   },
   "devDependencies": {
