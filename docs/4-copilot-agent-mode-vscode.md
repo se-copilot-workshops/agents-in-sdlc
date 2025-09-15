@@ -128,21 +128,21 @@ In addition, the tests need to run (and pass) before we merge everything into ou
 
 Copilot will likely take **up to 5 minutes to complete the work** above. Be patient and wait until it is finished in the Copilot window and you are presented with  a prompt to Continue.
 
-6. As prompted by Copilot, select **Continue** to run the tests.
+7. As prompted by Copilot, select **Continue** to run the tests.
 
    ![Screenshot showing a dialog in the Copilot Chat pane asking the user to confirm they are happy to run tests](images/copilot-agent-mode-run-tests.png)
 
-7. You may see some tests fail throughout the process, and that's okay! Copilot may work back and forth between code generation and tests until it completes the task and doesn't detect any errors.
+8. You may see some tests fail throughout the process, and that's okay! Copilot may work back and forth between code generation and tests until it completes the task and doesn't detect any errors.
 
    ![Screenshot showing a complete Chat session with Copilot Agent Mode](images/copilot-agent-mode-proposed-changes.png)
 
-8. Explore the generated code for any potential issues.
+9. Explore the generated code for any potential issues.
 
 > [!IMPORTANT]
 > Remember, it's always important to review the code that Copilot or any AI tools  generate.
 
-9.  Return to the browser with the website running. Explore the new functionality!
-10. Once you've confirmed everything works and reviewed the code, select **Keep** in the Copilot Chat window.
+10.  Return to the browser with the website running. Explore the new functionality!
+11. Once you've confirmed everything works and reviewed the code, select **Keep** in the Copilot Chat window.
 
 ## Publish the branch
 
