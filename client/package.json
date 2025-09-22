@@ -10,12 +10,12 @@
     "test:e2e": "npx playwright test"
   },
   "dependencies": {
-    "@astrojs/node": "^9.4.2",
+    "@astrojs/node": "^9.4.4",
     "@astrojs/svelte": "^7.1.1",
     "@tailwindcss/vite": "^4.1.13",
     "svelte": "^5.38.10",
 
-    "astro": "^5.13.5",
+    "astro": "^5.13.10",
     "typescript": "^5.9.2"
   },
   "devDependencies": {
