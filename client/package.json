@@ -10,7 +10,7 @@
     "test:e2e": "npx playwright test"
   },
   "dependencies": {
-    "@astrojs/node": "^9.4.4",
+    "@astrojs/node": "^9.4.6",
     "@astrojs/svelte": "^7.1.1",
     "@tailwindcss/vite": "^4.1.14",
     "svelte": "^5.39.11",
