@@ -68,3 +68,10 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
 - `data/`: Database files
 - `docs/`: Project documentation
 - `README.md`: Project documentation
+
+### Code review guidance
+
+- When performing a code review, check every function has a docstring or the language equivalent.
+- When performing a code review, ensure unit tests exist and pass for any new endpoint.
+- When performing a code review, prefer Python type hints and flag missing ones.
+- When performing a code review, call out missing accessibility or dark-mode styling in UI components.
