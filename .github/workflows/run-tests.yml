@@ -18,6 +18,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Install Japanese fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-ipafont fonts-noto-cjk
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -26,7 +31,6 @@ jobs:
 
       - name: Install Python dependencies
         run: bash ./scripts/setup-env.sh
-        
 
       - name: Run Flask unit tests
         run: bash ./scripts/run-server-tests.sh
