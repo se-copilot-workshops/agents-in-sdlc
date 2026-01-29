@@ -4,6 +4,13 @@ This repository contains the project for a 1 hour guided workshop to explore Git
 
 To begin the workshop, start at [docs/README.md](./docs/README.md)
 
+## Documentation
+
+The complete workshop documentation is automatically published at GitHub Pages and available at:
+**https://se-copilot-workshops.github.io/agents-in-sdlc/**
+
+The documentation is automatically deployed from the `docs/` directory when changes are pushed to main.
+
 Or, if just want to run the app...
 
 ## Launch the site

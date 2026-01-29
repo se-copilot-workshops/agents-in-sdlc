@@ -67,4 +67,7 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
 - `scripts/`: Development and deployment scripts
 - `data/`: Database files
 - `docs/`: Project documentation
+  - Jekyll-based workshop documentation
+  - Automatically deployed to GitHub Pages: https://se-copilot-workshops.github.io/agents-in-sdlc/
+  - Deployment triggered on pushes to main when docs/ changes
 - `README.md`: Project documentation
