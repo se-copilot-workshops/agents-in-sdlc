@@ -1,5 +1,7 @@
 # Tailspin Toys
 
+[![Deploy Jekyll site to Pages](https://github.com/se-copilot-workshops/agents-in-sdlc/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/se-copilot-workshops/agents-in-sdlc/actions/workflows/deploy-pages.yml)
+
 This repository contains the project for a 1 hour guided workshop to explore GitHub Copilot Agent Mode and related features in Visual Studio Code. The project is a website for a fictional game crowd-funding company, with a [Flask](https://flask.palletsprojects.com/en/stable/) backend using [SQLAlchemy](https://www.sqlalchemy.org/) and [Astro](https://astro.build/) frontend using [Svelte](https://svelte.dev/) for dynamic pages.
 
 To begin the workshop, start at [docs/README.md](./docs/README.md)
@@ -15,6 +17,13 @@ A script file has been created to launch the site. You can run it by:
 ```
 
 Then navigate to the [website](http://localhost:4321) to see the site!
+
+## Documentation
+
+The complete workshop documentation is automatically published at GitHub Pages and available at:
+**https://se-copilot-workshops.github.io/agents-in-sdlc/**
+
+The documentation is automatically deployed from the `docs/` directory when changes are pushed to main.
 
 ## License 
 

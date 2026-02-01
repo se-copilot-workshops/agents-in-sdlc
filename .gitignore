@@ -69,3 +69,9 @@ msbuild.wrn
 
 # SQLite
 *.db
+
+# Jekyll build output
+docs/_site/
+docs/Gemfile.lock
+docs/.jekyll-cache/
+.jekyll-cache/
