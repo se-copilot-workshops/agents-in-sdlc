@@ -1,3 +1,7 @@
+---
+nav_order: 3
+---
+
 # Exercise 1 - GitHub Copilot coding agent
 
 

@@ -1,3 +1,7 @@
+---
+nav_order: 5
+---
+
 # Exercise 3 - Providing context to Copilot with instruction files
 
 

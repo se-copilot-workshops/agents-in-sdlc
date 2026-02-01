@@ -1,3 +1,7 @@
+---
+nav_order: 6
+---
+
 # Exercise 4 - Adding new functionality with Copilot Agent Mode
 
 

@@ -11,9 +11,6 @@ defaults:
     values:
       layout: default
 
-exclude:
-  - images
-
 # Just the Docs settings
 color_scheme: dark
 search_enabled: true
