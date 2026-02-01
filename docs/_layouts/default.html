@@ -84,15 +84,22 @@ layout: none
       
       var savedTheme = localStorage.getItem('theme') || document.documentElement.getAttribute('data-theme') || 'dark';
       
-      // Ensure button label matches the currently applied theme (set earlier in head_custom.html)
-      btn.textContent = savedTheme === 'dark' ? '☀' : '☽';
+      // Update button appearance and aria-label based on current theme
+      function updateButton(theme) {
+        btn.textContent = theme === 'dark' ? '☀' : '☽';
+        btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        btn.setAttribute('aria-pressed', 'false');
+      }
+      
+      // Initialize button with current theme
+      updateButton(savedTheme);
       
       btn.addEventListener('click', function() {
         var currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
         var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-        btn.textContent = newTheme === 'dark' ? '☀' : '☽';
+        updateButton(newTheme);
       });
     })();
   </script>
