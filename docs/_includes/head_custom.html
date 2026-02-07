@@ -261,6 +261,155 @@
     height: 44px;
   }
 }
+
+/* ===== Hero Banner ===== */
+.hero-banner {
+  background: linear-gradient(135deg, #7253ed 0%, #4a90d9 100%);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-banner h1 {
+  color: #fff !important;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+}
+
+.hero-banner p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.hero-cta {
+  display: inline-block;
+  background: #fff;
+  color: #27262b !important;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #27262b !important;
+  text-decoration: none !important;
+}
+
+[data-theme="light"] .hero-banner {
+  background: linear-gradient(135deg, #7253ed 0%, #4a90d9 100%);
+}
+
+@media (max-width: 600px) {
+  .hero-banner {
+    padding: 2rem 1.25rem;
+  }
+  .hero-banner h1 {
+    font-size: 1.75rem;
+  }
+  .hero-banner p {
+    font-size: 1rem;
+  }
+}
+
+/* ===== Exercise Card Grid ===== */
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.exercise-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid #3a3a4a;
+  border-radius: 10px;
+  background: #2a2a3a;
+  text-decoration: none !important;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  color: inherit !important;
+}
+
+.exercise-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  text-decoration: none !important;
+}
+
+.exercise-card .card-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.exercise-card .card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.exercise-card .card-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 0 0.25rem 0;
+  display: inline;
+}
+
+.exercise-card .card-badge {
+  display: inline-block;
+  background: #22863a;
+  color: #fff !important;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.exercise-card .card-desc {
+  color: #a0a0b0;
+  font-size: 0.875rem;
+  margin: 0.35rem 0 0 0;
+  line-height: 1.4;
+}
+
+/* Light mode cards */
+[data-theme="light"] .exercise-card {
+  background: #fff !important;
+  border-color: #e0e0e0 !important;
+}
+
+[data-theme="light"] .exercise-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .exercise-card .card-title {
+  color: #27262b !important;
+}
+
+[data-theme="light"] .exercise-card .card-desc {
+  color: #57606a !important;
+}
+
+@media (max-width: 700px) {
+  .exercise-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 
 <script>
