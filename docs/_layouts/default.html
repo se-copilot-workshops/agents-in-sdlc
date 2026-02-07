@@ -1,0 +1,107 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-head-nav.css' | relative_url }}" id="jtd-head-nav-stylesheet">
+  
+  {% if site.search_enabled != false %}
+  <script src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
+  {% endif %}
+  <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  {% seo %}
+  
+  {% include head_custom.html %}
+</head>
+<body>
+  <!-- Theme Toggle Button - Embedded directly in body -->
+  <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark/light mode" type="button">☀</button>
+  
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  
+  {% include icons/icons.html %}
+  
+  <header class="side-bar">
+    <div class="site-header">
+      <a href="{{ '/' | relative_url }}" class="site-title lh-tight">
+        {{ site.title }}
+      </a>
+      <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+      </button>
+    </div>
+    <nav aria-label="Main" id="site-nav" class="site-nav">
+      {% include nav.html %}
+    </nav>
+    <div class="d-md-block d-none site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </div>
+  </header>
+  
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      {% if site.search_enabled != false %}
+      <div class="search" role="search">
+        <div class="search-input-wrap">
+          <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search {{ site.title }}" autocomplete="off">
+          <label for="search-input" class="search-label">
+            <span class="sr-only">Search {{ site.title }}</span>
+            <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+          </label>
+        </div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+      {% endif %}
+    </div>
+    <div class="main-content-wrap">
+      <div id="main-content" class="main-content">
+        <main>
+          {{ content }}
+        </main>
+        <hr>
+        <footer>
+          <div class="d-md-none mt-4 fs-2">
+            This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div class="search-overlay"></div>
+  </div>
+  
+  <script>
+    // Theme toggle functionality
+    (function() {
+      var btn = document.getElementById('theme-toggle-btn');
+      if (!btn) return; // Early exit if button doesn't exist
+      
+      var savedTheme = localStorage.getItem('theme') || document.documentElement.getAttribute('data-theme') || 'dark';
+      
+      // Update button appearance and aria-label based on current theme
+      function updateButton(theme) {
+        btn.textContent = theme === 'dark' ? '☀' : '☽';
+        btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        btn.setAttribute('aria-pressed', 'false');
+      }
+      
+      // Initialize button with current theme
+      updateButton(savedTheme);
+      
+      btn.addEventListener('click', function() {
+        var currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+        var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateButton(newTheme);
+      });
+    })();
+  </script>
+</body>
+</html>

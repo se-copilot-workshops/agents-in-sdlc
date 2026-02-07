@@ -1,0 +1,23 @@
+title: Agents in the SDLC
+description: Learn how to leverage GitHub Copilot agents across the software development lifecycle
+repository: se-copilot-workshops/agents-in-sdlc
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Just the Docs settings
+color_scheme: dark
+search_enabled: true
+nav_sort: case_insensitive
+
+# Callouts
+callouts:
+  warning:
+    title: WARNING
+    color: red

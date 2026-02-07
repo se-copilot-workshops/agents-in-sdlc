@@ -1,0 +1,76 @@
+name: "Deploy Jekyll site to Pages"
+
+# Deploy the Jekyll documentation site to GitHub Pages
+# Triggers on pushes to main when docs/ changes, or manually via workflow_dispatch
+on:
+  push:
+    branches: [main]
+    # Only trigger when docs directory or workflow itself changes
+    paths:
+      - 'docs/**'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+# Explicit permissions following security best practices
+# Required for GitHub Pages deployment
+permissions:
+  contents: read      # Read repository contents
+  pages: write        # Deploy to GitHub Pages
+  id-token: write     # Required for OIDC authentication
+
+# Allow only one concurrent deployment, skipping runs queued between in-progress and latest
+# Cancel any in-progress deployments
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Build job - compiles Jekyll site from docs/ directory
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      # Checkout the repository code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Configure GitHub Pages settings and extract metadata
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Build the Jekyll site with GitHub Pages gem
+      # This ensures compatibility with GitHub's Pages environment
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./docs          # Source directory containing Jekyll site
+          destination: ./_site    # Output directory for built site
+
+      # Upload the built site as an artifact for deployment
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  # Deployment job - publishes the built site to Pages
+  deploy:
+    # Only deploy after successful build
+    needs: build
+
+    # Explicit permissions for deployment job
+    permissions:
+      pages: write
+      id-token: write
+
+    # Deploy to the GitHub Pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # Deploy the uploaded artifact to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

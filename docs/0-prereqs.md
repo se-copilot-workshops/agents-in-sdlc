@@ -1,3 +1,7 @@
+---
+nav_order: 2
+---
+
 # Exercise 0: Prerequisites
 
 Before we get started on the lab, there's a few tasks we need to complete to get everything ready. We need to get a copy of the repository which includes the code, then spin up a [codespace](https://github.com/features/codespaces) to use to create our code.

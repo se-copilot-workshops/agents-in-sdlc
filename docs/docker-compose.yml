@@ -1,0 +1,16 @@
+services:
+  docs:
+    image: ruby:3.2
+    command: >
+      bash -c "
+        gem install bundler &&
+        bundle install &&
+        bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload
+      "
+    working_dir: /srv/jekyll
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - "3000:4000"
+    environment:
+      - BUNDLE_PATH=/srv/jekyll/.bundle

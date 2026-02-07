@@ -1,0 +1,421 @@
+<style>
+/* Theme toggle button - positioned top-right for visibility */
+#theme-toggle-btn {
+  position: fixed !important;
+  top: 16px !important;
+  right: 24px !important;
+  z-index: 999999 !important;
+  background-color: #7253ed !important;
+  border: 2px solid #fff !important;
+  border-radius: 50% !important;
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px !important;
+  min-height: 48px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.4rem !important;
+  line-height: 1 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#theme-toggle-btn:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Light theme overrides for just-the-docs */
+[data-theme="light"] body,
+[data-theme="light"] .main,
+[data-theme="light"] .main-content-wrap {
+  background-color: #fff !important;
+  color: #27262b !important;
+}
+
+[data-theme="light"] .side-bar {
+  background-color: #f5f6fa !important;
+  border-color: #e0e0e0 !important;
+}
+
+[data-theme="light"] .main-content,
+[data-theme="light"] .site-nav,
+[data-theme="light"] .site-header,
+[data-theme="light"] .site-footer {
+  background-color: #f5f6fa !important;
+  color: #27262b !important;
+}
+
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6,
+[data-theme="light"] .site-title,
+[data-theme="light"] p,
+[data-theme="light"] li,
+[data-theme="light"] td,
+[data-theme="light"] th,
+[data-theme="light"] blockquote {
+  color: #27262b !important;
+}
+
+[data-theme="light"] a {
+  color: #7253ed !important;
+}
+
+[data-theme="light"] .nav-list-link,
+[data-theme="light"] .nav-list-item {
+  color: #27262b !important;
+}
+
+[data-theme="light"] .nav-list-link:hover,
+[data-theme="light"] .nav-list-link.active {
+  background-color: #e8e8e8 !important;
+}
+
+/* Navigation specific fixes */
+[data-theme="light"] .site-nav,
+[data-theme="light"] .site-nav *,
+[data-theme="light"] .nav-list,
+[data-theme="light"] .nav-list *,
+[data-theme="light"] .nav-list-item,
+[data-theme="light"] .nav-list-link,
+[data-theme="light"] .site-nav ul,
+[data-theme="light"] .site-nav li,
+[data-theme="light"] .site-nav a {
+  color: #27262b !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+[data-theme="light"] .side-bar *:not(#theme-toggle-btn) {
+  color: #27262b !important;
+}
+
+[data-theme="light"] .side-bar a {
+  color: #7253ed !important;
+}
+
+[data-theme="light"] .nav-list-link:hover {
+  background-color: #e8e8e8 !important;
+}
+
+[data-theme="light"] .nav-list-expander,
+[data-theme="light"] .nav-list-expander svg {
+  color: #27262b !important;
+}
+
+[data-theme="light"] .breadcrumb-nav,
+[data-theme="light"] .breadcrumb-nav-list,
+[data-theme="light"] .breadcrumb-nav-list-item {
+  color: #27262b !important;
+}
+
+[data-theme="light"] .search-input {
+  background-color: #fff !important;
+  color: #27262b !important;
+  border-color: #ddd !important;
+}
+
+[data-theme="light"] .search-results {
+  background-color: #fff !important;
+  color: #27262b !important;
+}
+
+[data-theme="light"] code {
+  background-color: #f0f0f0 !important;
+  color: #27262b !important;
+}
+
+[data-theme="light"] pre {
+  background-color: #f5f5f5 !important;
+}
+
+/* Code highlighting fixes */
+[data-theme="light"] .highlight,
+[data-theme="light"] .highlighter-rouge,
+[data-theme="light"] .language-plaintext,
+[data-theme="light"] .language-markdown,
+[data-theme="light"] .language-yaml,
+[data-theme="light"] .language-json,
+[data-theme="light"] .language-bash,
+[data-theme="light"] .language-shell,
+[data-theme="light"] .language-javascript,
+[data-theme="light"] .language-python {
+  background-color: #f5f5f5 !important;
+}
+
+[data-theme="light"] .highlight pre,
+[data-theme="light"] .highlighter-rouge pre,
+[data-theme="light"] .highlight code,
+[data-theme="light"] .highlighter-rouge code,
+[data-theme="light"] pre code,
+[data-theme="light"] pre.highlight {
+  background-color: #f5f5f5 !important;
+  color: #27262b !important;
+}
+
+[data-theme="light"] .highlight pre code,
+[data-theme="light"] .highlighter-rouge pre code {
+  color: #27262b !important;
+}
+
+/* Rouge syntax highlighting for light theme */
+[data-theme="light"] .highlight .k,
+[data-theme="light"] .highlight .kd,
+[data-theme="light"] .highlight .kn,
+[data-theme="light"] .highlight .kp,
+[data-theme="light"] .highlight .kr,
+[data-theme="light"] .highlight .kt {
+  color: #d73a49 !important;
+}
+
+[data-theme="light"] .highlight .s,
+[data-theme="light"] .highlight .s1,
+[data-theme="light"] .highlight .s2,
+[data-theme="light"] .highlight .se {
+  color: #032f62 !important;
+}
+
+[data-theme="light"] .highlight .c,
+[data-theme="light"] .highlight .c1,
+[data-theme="light"] .highlight .cm {
+  color: #6a737d !important;
+}
+
+[data-theme="light"] .highlight .n,
+[data-theme="light"] .highlight .na,
+[data-theme="light"] .highlight .nb,
+[data-theme="light"] .highlight .nc,
+[data-theme="light"] .highlight .nf,
+[data-theme="light"] .highlight .nn,
+[data-theme="light"] .highlight .nv {
+  color: #005cc5 !important;
+}
+
+[data-theme="light"] .main-header {
+  background-color: #fff !important;
+  border-color: #e0e0e0 !important;
+}
+
+[data-theme="light"] table,
+[data-theme="light"] .table-wrapper {
+  background-color: #fff !important;
+}
+
+/* Table specific fixes */
+[data-theme="light"] table thead,
+[data-theme="light"] table tbody,
+[data-theme="light"] table tr {
+  background-color: #fff !important;
+}
+
+[data-theme="light"] table th {
+  background-color: #f5f6fa !important;
+  color: #27262b !important;
+  border-color: #e0e0e0 !important;
+}
+
+[data-theme="light"] table td {
+  background-color: #fff !important;
+  color: #27262b !important;
+  border-color: #e0e0e0 !important;
+}
+
+[data-theme="light"] table td a {
+  color: #7253ed !important;
+}
+
+[data-theme="light"] table th,
+[data-theme="light"] table td {
+  border-color: #e0e0e0 !important;
+}
+
+[data-theme="light"] hr {
+  border-color: #e0e0e0 !important;
+}
+
+[data-theme="light"] .anchor-heading {
+  color: #7253ed !important;
+}
+
+[data-theme="light"] #theme-toggle-btn {
+  background: #27262b !important;
+}
+
+@media (max-width: 800px) {
+  #theme-toggle-btn {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* ===== Hero Banner ===== */
+.hero-banner {
+  background: linear-gradient(135deg, #7253ed 0%, #4a90d9 100%);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-banner h1 {
+  color: #fff !important;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+}
+
+.hero-banner p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.hero-cta {
+  display: inline-block;
+  background: #fff;
+  color: #27262b !important;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #27262b !important;
+  text-decoration: none !important;
+}
+
+[data-theme="light"] .hero-banner {
+  background: linear-gradient(135deg, #7253ed 0%, #4a90d9 100%);
+}
+
+@media (max-width: 600px) {
+  .hero-banner {
+    padding: 2rem 1.25rem;
+  }
+  .hero-banner h1 {
+    font-size: 1.75rem;
+  }
+  .hero-banner p {
+    font-size: 1rem;
+  }
+}
+
+/* ===== Exercise Card Grid ===== */
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.exercise-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid #3a3a4a;
+  border-radius: 10px;
+  background: #2a2a3a;
+  text-decoration: none !important;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  color: inherit !important;
+}
+
+.exercise-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  text-decoration: none !important;
+}
+
+.exercise-card .card-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.exercise-card .card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.exercise-card .card-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 0 0.25rem 0;
+  display: inline;
+}
+
+.exercise-card .card-badge {
+  display: inline-block;
+  background: #22863a;
+  color: #fff !important;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.exercise-card .card-desc {
+  color: #a0a0b0;
+  font-size: 0.875rem;
+  margin: 0.35rem 0 0 0;
+  line-height: 1.4;
+}
+
+/* Light mode cards */
+[data-theme="light"] .exercise-card {
+  background: #fff !important;
+  border-color: #e0e0e0 !important;
+}
+
+[data-theme="light"] .exercise-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .exercise-card .card-title {
+  color: #27262b !important;
+}
+
+[data-theme="light"] .exercise-card .card-desc {
+  color: #57606a !important;
+}
+
+@media (max-width: 700px) {
+  .exercise-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<script>
+// Apply saved theme immediately to prevent flash
+(function() {
+  var savedTheme = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+})();
+</script>
