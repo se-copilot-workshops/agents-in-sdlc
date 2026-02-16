@@ -91,6 +91,12 @@ As highlighted previously, **copilot-instructions.md** is designed to provide pr
    - Before imports or any code, add a comment block that explains the purpose of the file.
    ```
 
+   Note: The repository-level `.github/copilot-instructions.md` file also customizes GitHub Copilot's code review behavior (both on github.com and in supported IDEs). To influence Copilot's review comments, add natural-language guidance that begins with "When performing a code review...". For example:
+
+   ```
+   When performing a code review, check every function has a docstring or the language equivalent.
+   ```
+
 6. Close **copilot-instructions.md**.
 7. Select **New Chat** in Copilot chat to clear the buffer and start a new conversation.
 8. Return to **server/routes/publishers.py** to ensure focus is set correctly.
