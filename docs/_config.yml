@@ -1,5 +1,7 @@
 title: Agents in the SDLC
 description: Learn how to leverage GitHub Copilot agents across the software development lifecycle
+baseurl: ""
+url: "https://connect.copilot-workshops.com"
 repository: se-copilot-workshops/agents-in-sdlc
 remote_theme: just-the-docs/just-the-docs
 plugins:

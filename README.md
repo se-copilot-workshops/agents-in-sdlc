@@ -21,7 +21,7 @@ Then navigate to the [website](http://localhost:4321) to see the site!
 ## Documentation
 
 The complete workshop documentation is automatically published at GitHub Pages and available at:
-**https://se-copilot-workshops.github.io/agents-in-sdlc/**
+**https://connect.copilot-workshops.com**
 
 The documentation is automatically deployed from the `docs/` directory when changes are pushed to main.
 
