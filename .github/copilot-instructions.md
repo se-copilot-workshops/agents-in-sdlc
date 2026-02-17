@@ -66,5 +66,5 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
   - `src/styles/`: CSS and Tailwind configuration
 - `scripts/`: Development and deployment scripts
 - `data/`: Database files
-- `docs/`: Project documentation
+- `docs/`: Project documentation - Automatically deployed to GitHub Pages: https://connect.copilot-workshops.com
 - `README.md`: Project documentation
