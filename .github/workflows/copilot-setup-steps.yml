@@ -21,6 +21,9 @@ jobs:
           python-version: "3.13"
           cache: "pip"
 
+      - name: Ensure setup script is executable
+        run: chmod +x ./scripts/setup-env.sh
+
       - name: Install Python dependencies
         run: ./scripts/setup-env.sh
 

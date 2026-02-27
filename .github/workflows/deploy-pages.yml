@@ -11,6 +11,11 @@ on:
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
+# Centralize the allowed repository to avoid repeating the value across jobs.
+# Jobs will check github.repository against this value and skip if it does not match.
+env:
+  ALLOWED_REPO: se-copilot-workshops/agents-in-sdlc
+
 # Explicit permissions following security best practices
 # Required for GitHub Pages deployment
 permissions:
@@ -26,7 +31,9 @@ concurrency:
 
 jobs:
   # Build job - compiles Jekyll site from docs/ directory
+  # Guard: skip this job when running outside the intended repository
   build:
+    if: github.repository == env.ALLOWED_REPO
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -56,6 +63,8 @@ jobs:
   deploy:
     # Only deploy after successful build
     needs: build
+    # Guard: skip this job when running outside the intended repository
+    if: github.repository == env.ALLOWED_REPO
 
     # Explicit permissions for deployment job
     permissions:
